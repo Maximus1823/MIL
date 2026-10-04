@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>alex's desktop ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="desktop">
+    <div class="desktop-top">
+      <span>Maxi's desktop</span>
+      <span id="clock">12:00 PM</span>
+    </div>
+
+    <section class="welcome">
+      <div class="sun"></div>
+      <div class="welcome-copy">
+        <p class="eyebrow">Home</p>
+        <h1>Hi, i'm Alex <span>✦</span></h2>
+        <p></p>
+      </div>
+    </section>
+
+    <div class="icons" aria-label="Desktop shortcuts">
+      <button class="desktop-icon" data-card="about">
+        <span class="icon-paper">♡</span>
+        <strong>about me</strong>
+        <small>read me</small>
+      </button>
+      <button class="desktop-icon" data-card="favorites">
+        <span class="icon-folder">✿</span>
+        <strong>things i like</strong>
+        <small>favorites</small>
+      </button>
+      <button class="desktop-icon" data-card="art">
+        <span class="icon-paper">✎</span>
+        <strong>my art</strong>
+        <small>little creations</small>
+      </button>
+      <button class="desktop-icon" data-card="code">
+        <span class="icon-window">&lt;/&gt;</span>
+        <strong>my toolbox</strong>
+        <small>things i use</small>
+      </button>
+      <button class="desktop-icon" data-card="quote">
+        <span class="icon-note">☁</span>
+        <strong>thoughts</strong>
+        <small>one little note</small>
+      </button>
+      <button class="desktop-icon" data-card="contact">
+        <span class="icon-mail">♡</span>
+        <strong>say hi</strong>
+        <small>contact</small>
+      </button>
+    </div>
+
+    <div class="hint">just click ✦</div>
+
+    <footer>
+      <span>made by alexander rogado</span>
+      <button id="themeBtn">change mood</button>
+      <button id="soundBtn">sound: on</button>
+    </footer>
+  </main>
+
+  <div class="modal-backdrop" id="backdrop" hidden>
+    <article class="postcard" id="postcard" role="dialog" aria-modal="true">
+      <button class="close" id="closeBtn" aria-label="Close">×</button>
+      <div class="postcard-stamp">✦ alex's postcard</div>
+      <div class="postcard-body" id="cardContent"></div>
+      <div class="postcard-bottom">
+        <span>from my little desktop ♡</span>
+        <span id="cardDate"></span>
+      </div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

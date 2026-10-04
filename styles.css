@@ -1,0 +1,86 @@
+:root{
+  --cream:#fff8e9;
+  --paper:#fffdf6;
+  --green:#557b59;
+  --deep:#2f4d36;
+  --sage:#b9cdb1;
+  --mint:#dfead9;
+  --yellow:#f6dfa0;
+  --pink:#efd6cf;
+  --ink:#304137;
+  --shadow:0 18px 45px rgba(48,65,55,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; min-height:100vh; color:var(--ink);
+  font-family:"DM Sans",sans-serif;
+  background:
+    radial-gradient(circle at 15% 15%,rgba(246,223,160,.35),transparent 25%),
+    radial-gradient(circle at 85% 80%,rgba(185,205,177,.4),transparent 30%),
+    var(--cream);
+  overflow-x:hidden;
+}
+body.night{--cream:#17231b;--paper:#243329;--green:#a8c89e;--deep:#d9ecd2;--sage:#4e6853;--mint:#314436;--yellow:#75683e;--pink:#644d49;--ink:#edf4e9;--shadow:0 18px 45px rgba(0,0,0,.28)}
+button{font:inherit;color:inherit}
+.desktop{min-height:100vh;max-width:1180px;margin:auto;padding:22px 34px 20px;position:relative}
+.desktop-top{display:flex;justify-content:space-between;font-family:"DM Mono",monospace;font-size:12px;opacity:.7;border-bottom:1px solid rgba(48,65,55,.12);padding-bottom:13px}
+.welcome{min-height:250px;display:flex;align-items:center;position:relative;overflow:hidden}
+.welcome-copy{position:relative;z-index:2}
+.eyebrow{font:18px "Patrick Hand",cursive;margin:0 0 2px;opacity:.75}
+h1{font:clamp(46px,7vw,82px);line-height:.9;margin:0;font-weight:600;letter-spacing:-4px;color:var(--deep)}
+h1 span{color:var(--green);font-size:.65em}
+.welcome-copy>p:last-child{font:23px "Patrick Hand",cursive;margin:15px 0 0}
+.sun{position:absolute;width:150px;height:150px;border-radius:50%;right:12%;top:40px;background:var(--yellow);opacity:.7;box-shadow:0 0 0 25px rgba(246,223,160,.14)}
+.sun:after{content:"";position:absolute;width:320px;height:105px;background:var(--sage);border-radius:50% 50% 0 0;right:-180px;bottom:-100px;opacity:.45}
+.icons{display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin:5px 0 30px}
+.desktop-icon{border:0;background:transparent;padding:13px 7px 12px;border-radius:20px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;transition:transform .3s ease,background .3s ease}
+.desktop-icon:hover{background:rgba(255,253,246,.6);transform:translateY(-6px)}
+.desktop-icon:active{transform:scale(.96)}
+.desktop-icon strong{font-size:13px;font-weight:600}
+.desktop-icon small{font:12px "DM Mono",monospace;opacity:.5}
+.icon-paper,.icon-folder,.icon-window,.icon-note,.icon-mail{
+  width:70px;height:62px;display:grid;place-items:center;font-size:28px;
+  border-radius:13px;box-shadow:0 8px 18px rgba(48,65,55,.1);margin-bottom:5px
+}
+.icon-paper{background:var(--paper);border:1px solid rgba(48,65,55,.1);transform:rotate(-2deg)}
+.icon-folder{background:var(--yellow);border-radius:9px 9px 13px 13px;transform:rotate(2deg)}
+.icon-window{background:var(--deep);color:var(--cream);font:18px "DM Mono",monospace}
+.icon-note{background:var(--pink);transform:rotate(-3deg)}
+.icon-mail{background:var(--mint);transform:rotate(2deg)}
+.hint{text-align:center;font:18px "Patrick Hand",cursive;opacity:.55;margin:5px 0 40px}
+footer{border-top:1px solid rgba(48,65,55,.12);padding-top:15px;display:flex;justify-content:center;gap:20px;font:11px "DM Mono",monospace;opacity:.65}
+footer button{border:0;background:none;text-decoration:underline;cursor:pointer}
+
+/* postcard */
+.modal-backdrop{position:fixed;inset:0;background:rgba(35,49,40,.28);backdrop-filter:blur(7px);display:grid;place-items:center;padding:25px;z-index:20;animation:fadeIn .25s ease}
+.modal-backdrop[hidden]{display:none}
+.postcard{
+  width:min(720px,94vw);max-height:88vh;overflow:auto;background:var(--paper);
+  border-radius:7px;box-shadow:var(--shadow);position:relative;padding:18px;
+  transform:rotate(-1deg);animation:cardIn .45s cubic-bezier(.2,.8,.2,1);
+  border:1px solid rgba(48,65,55,.12)
+}
+.postcard:before{content:"";position:absolute;inset:9px;border:1px dashed rgba(48,65,55,.2);pointer-events:none}
+.close{position:absolute;right:25px;top:20px;width:34px;height:34px;border:0;border-radius:50%;background:var(--mint);cursor:pointer;font-size:23px;z-index:2}
+.postcard-stamp{margin:9px 8px 20px auto;width:max-content;border:2px solid var(--green);padding:6px 10px;font:11px "DM Mono",monospace;transform:rotate(4deg);opacity:.75}
+.postcard-body{padding:15px 35px 30px;min-height:300px}
+.postcard-body h2{font:46px "Patrick Hand",cursive;color:var(--deep);margin:0 0 8px;line-height:1}
+.postcard-body .lead{font:19px "Patrick Hand",cursive;line-height:1.5;max-width:600px}
+.postcard-body p{line-height:1.7}
+.postcard-body ul{padding-left:22px;line-height:2}
+.postcard-bottom{border-top:1px dashed rgba(48,65,55,.25);padding:13px 10px 4px;display:flex;justify-content:space-between;font:10px "DM Mono",monospace;opacity:.55}
+.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.mini-card{padding:16px;border-radius:15px;background:var(--mint)}
+.mini-card:nth-child(even){background:var(--yellow)}
+.mini-card h3{font-size:14px;margin:0 0 5px}
+.mini-card p{font-size:13px;margin:0;line-height:1.5}
+.sticker{display:inline-block;padding:7px 12px;background:var(--yellow);border-radius:50px;font:15px "Patrick Hand",cursive;margin:4px;transform:rotate(-2deg)}
+.sticker:nth-child(2n){background:var(--pink);transform:rotate(2deg)}
+.code-paper{background:#1e3024;color:#dcebd7;border-radius:15px;padding:18px;font:12px "DM Mono",monospace;line-height:1.7}
+.big-note{background:var(--yellow);padding:25px;transform:rotate(-1.5deg);font:27px "Patrick Hand",cursive;line-height:1.35;margin-top:15px}
+.contact-button{display:inline-block;margin-top:12px;padding:12px 17px;border-radius:99px;background:var(--green);color:white;text-decoration:none;font-size:13px}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes cardIn{from{opacity:0;transform:translateY(30px) rotate(2deg) scale(.96)}to{opacity:1;transform:translateY(0) rotate(-1deg) scale(1)}}
+@media(max-width:800px){.icons{grid-template-columns:repeat(3,1fr)}.welcome{min-height:220px}.sun{right:-30px}.desktop{padding:18px 18px}.postcard-body{padding:12px 20px 25px}.card-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.icons{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-2px}.desktop-icon:hover{transform:none}footer{flex-wrap:wrap}}
