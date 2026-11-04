@@ -16,8 +16,8 @@ const cards = {
     html: `
       <p class="lead">a very serious collection of very unserious favorites.</p>
       <div>
-        <span class="sticker">Mobile Legends</span><span class="sticker">Pokémon Champions</span><span class="sticker">Wildrift</span><span class="sticker">Roblox</span>
-        <span class="sticker">carbonara</span><span class="sticker">pork sinigang</span><span class="sticker">siomai</span><span class="sticker">egg + tomato</span>
+        <span class="sticker">Mobile Legends</span><span class="sticker">Pokémon Champions</span><span class="sticker">Transformers</span><span class="sticker">Roblox</span>
+        <span class="sticker">carbonara</span><span class="sticker">Monster Hunter</span><span class="sticker">Money</span><span class="sticker"></span>
         <span class="sticker">green</span><span class="sticker">Attack on Titan</span><span class="sticker">Cyberpunk: Edgerunners</span>
       </div>
       <p>i also read webtoons/manhwa like <b>Omniscient Reader's Viewpoint</b>, <b>Villain to Kill</b>, <b>The Legend of Song</b>, and <b>The Knight Only Lives Today</b>.</p>`
