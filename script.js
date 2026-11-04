@@ -2,17 +2,17 @@ const cards = {
   about: {
     title: "a little about me ♡",
     html: `
-      <p class="lead">hi! i'm alex, a grade 12 student from Pasay City National Science High School. This is just a small place where i can put the things that feel like me.</p>
+      <p class="lead">Hi! I'm Alex, a grade 12 student from Pasay City National Science High School. This is just a small place where i can put the things that feel like me.</p>
       <p>I like making things, whether that's drawing, building a small project, or messing around with things.</p>
       <div class="card-grid">
         <div class="mini-card"><h3>Birthdate:</h3><p>february 10, 2009</p></div>
-        <div class="mini-card"><h3>favorite day</h3><p>saturday, because "na para bang"</p></div>
+        <div class="mini-card"><h3></h3><p></p></div>
         <div class="mini-card"><h3>hobbies</h3><p>I like sleeping</p></div>
         <div class="mini-card"><h3>I LOVE MONEY</h3><p>Especially Blue Bills</p></div>
       </div>`
   },
   favorites: {
-    title: "things i like ✿",
+    title: "Things i like ✿",
     html: `
       <p class="lead">a very serious collection of very unserious favorites.</p>
       <div>
@@ -23,7 +23,7 @@ const cards = {
       <p>i also read webtoons/manhwa like <b>Omniscient Reader's Viewpoint</b>, <b>Villain to Kill</b>, <b>The Legend of Song</b>, and <b>The Knight Only Lives Today</b>.</p>`
   },
   art: {
-    title: "my art corner ✎",
+    title: "My art corner ✎",
     html: `
       <p class="lead">i like painting and drawing because sometimes it's easier to express a feeling with an image than with words.</p>
       <div class="card-grid">
@@ -41,14 +41,12 @@ const cards = {
         Python<br>
         HTML / CSS / JavaScript<br>
         GitHub / Gatsby<br>
-        Figma<br>
         Unity / Blender<br>
         <br>
-        // still learning, still breaking things, still fixing them.
       </div>`
   },
   quote: {
-    title: "a thought i keep ♡",
+    title: "My socials ♡",
     html: `
       <div class="big-note">“Chasing perfection is useless. The more you strive for perfection, the more you stray away from it. I just want to make it all worth it.”</div>
       <p class="lead">i'm currently improving myself, one small thing at a time.</p>`
