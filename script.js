@@ -2,12 +2,12 @@ const cards = {
   about: {
     title: "a little about me ♡",
     html: `
-      <p class="lead">hi! i'm alex, a grade 12 student from Pasay City National Science High School. this is just a small place where i can put the things that feel like me.</p>
-      <p>i like making things, whether that's drawing something random, building a small project, writing a poem, or messing around with code until it works.</p>
+      <p class="lead">hi! i'm alex, a grade 12 student from Pasay City National Science High School. This is just a small place where i can put the things that feel like me.</p>
+      <p>I like making things, whether that's drawing, building a small project, or messing around with things.</p>
       <div class="card-grid">
-        <div class="mini-card"><h3>born</h3><p>february 10, 2009</p></div>
-        <div class="mini-card"><h3>favorite day</h3><p>saturday, because no school ♡</p></div>
-        <div class="mini-card"><h3>hobbies</h3><p>badminton, dancing, drawing</p></div>
+        <div class="mini-card"><h3>Birthdate:</h3><p>february 10, 2009</p></div>
+        <div class="mini-card"><h3>favorite day</h3><p>saturday, because "na para bang"</p></div>
+        <div class="mini-card"><h3>hobbies</h3><p>I like sleeping</p></div>
         <div class="mini-card"><h3>I LOVE MONEY</h3><p>Especially Blue Bills</p></div>
       </div>`
   },
