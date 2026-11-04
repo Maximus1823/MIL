@@ -46,7 +46,7 @@ const cards = {
       </div>`
   },
   quote: {
-    title: "My socials ♡",
+    title: "My Socials♡",
     html: `
       <div class="big-note">“Chasing perfection is useless. The more you strive for perfection, the more you stray away from it. I just want to make it all worth it.”</div>
       <p class="lead">i'm currently improving myself, one small thing at a time.</p>`
