@@ -49,7 +49,10 @@ const cards = {
     title: "My Socials♡",
     html: `
       <div class="big-note">The 3 social media apps that I currently use are:</div>
-      <p class="lead">Instagram</p>
+      <div class="social-list">
+      <button class="social-btn" onclick="showSocial('instagram')">
+      📷 Instagram →
+      </button>
       <p class="lead">Tiktok</p>
       <p class="lead">Facebook</p>
       `
@@ -117,3 +120,11 @@ function updateClock(){
   document.getElementById("clock").textContent = new Date().toLocaleTimeString("en-PH",{hour:"numeric",minute:"2-digit"});
 }
 updateClock(); setInterval(updateClock,30000);
+
+const socialInfo = {
+  instagram: {
+    title: "My Instagram 📷",
+    text: "This is wher.",
+    username: "@maxl.musl",
+    link:"https://www.instagram.com/maxl.musl?dlrf=YW8yNTRqeTR6cWgy"
+  },
