@@ -30,7 +30,7 @@ const cards = {
         <div class="mini-card"><h3>drawing</h3><p>characters, random ideas, and whatever i feel like sketching.</p></div>
         <div class="mini-card"><h3>design</h3><p>i enjoy making interfaces that feel simple and nice to look at.</p></div>
       </div>
-      <p>my main art tool is <b>Clip Studio Paint</b>. i also use Figma when i want to play around with layouts.</p>`
+      <p>I'm mainly a <b>Traditional Artist</b>. </p>`
   },
   code: {
     title: "my little toolbox &lt;/&gt;",
@@ -48,8 +48,11 @@ const cards = {
   quote: {
     title: "My Socials♡",
     html: `
-      <div class="big-note">“Chasing perfection is useless. The more you strive for perfection, the more you stray away from it. I just want to make it all worth it.”</div>
-      <p class="lead">i'm currently improving myself, one small thing at a time.</p>`
+      <div class="big-note">The 3 social media apps that I currently use are:</div>
+      <p class="lead">Instagram</p>
+      <p class="lead">Tiktok</p>
+      <p class="lead">Facebook</p>
+      `
   },
   contact: {
     title: "say hi ✉",
