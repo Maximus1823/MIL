@@ -53,8 +53,24 @@ const cards = {
       <button class="social-btn" onclick="showSocial('instagram')">
       📷 Instagram →
       </button>
-      <p class="lead">Tiktok</p>
-      <p class="lead">Facebook</p>
+      
+      <button class="social-btn" onclick="showSocial('tiktok')">
+      <span>♪</span>
+      <span>TikTok</span>
+      <span>↗</span>
+      </button>
+      
+      <button class="social-btn" onclick="showSocial('facebook')">
+      <span>☁</span>
+      <span>Facebook</span>
+      <span>↗</span>
+      </button>
+
+      </div>
+
+      <div id="socialDetails" class="social-details">
+      <p>pick one!♡</p>
+      </div>
       `
   },
   contact: {
@@ -129,3 +145,33 @@ const socialInfo = {
     username: "@maxl.musl",
     link:"https://www.instagram.com/maxl.musl?dlrf=YW8yNTRqeTR6cWgy"
   },
+  tiktok: {
+    title: "TikTok ♪",
+    description: "My identity on TikTok is pretty much the same as on Instagram, but I spend more time doomscrolling. I usually spend hours scrolling through my For You Page, watching random videos, and entertaining myself with the content that appears on my feed. I share almost anything as long as it makes me laugh or catches my interest. I do not usually post videos or share posts publicly, but I have countless drafts of myself doing TikTok dances that I have never posted",
+    username: "@maximus.1823",
+    link: "https://www.tiktok.com/@maximus.1823?_r=1&_t=ZS-9B8ZRPXwvNo"
+  },
+  facebook: {
+    title: "Facebook ☁",
+    description: "My identity on Facebook is not that active since I do not use the app very often. When I do use it, I mostly use it to stay updated on important announcements and news, such as updates from Pasay PIO and Kolehiyo. I usually scroll through my feed to check for information that might be useful or relevant to me. I do not really share posts or publish anything on Facebook because I mainly use it as a source of information and updates.",
+    username: "Alexander Rogado",
+    link: "https://www.facebook.com/share/1EAGxjRDwi/"
+  }
+};
+
+function showSocial(platform) {
+  const social = socialInfo[platform];
+  const details = document.getElementById("socialDetails");
+
+  details.innerHTML = `
+    <h3>${social.title}</h3>
+    <p>${social.description}</p>
+    <p class="social-username">${social.username}</p>
+    <a href="${social.link}" target="_blank"
+       rel="noopener noreferrer" class="contact-button">
+       visit my ${platform} →
+    </a>
+  `;
+
+  clickSound();
+}
