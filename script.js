@@ -124,7 +124,7 @@ updateClock(); setInterval(updateClock,30000);
 const socialInfo = {
   instagram: {
     title: "My Instagram 📷",
-    text: "This is wher.",
+    text: "My identity on Instagram is basically a doomscroller and a reposter. I usually spend my time scrolling through my feed, watching reels, and looking at different posts. Most of the time, I use Instagram for entertainment and to keep myself updated with things that interest me. The content I share is usually anything funny or relatable that matches my mood. As for posting, I do not post very often, and when I do, I mostly share pictures.",
     username: "@maxl.musl",
     link:"https://www.instagram.com/maxl.musl?dlrf=YW8yNTRqeTR6cWgy"
   },
