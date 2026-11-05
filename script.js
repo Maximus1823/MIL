@@ -137,7 +137,6 @@ function updateClock(){
 }
 updateClock(); setInterval(updateClock,30000);
 
-const backdrop = document.getElementById("backdrop");
 const socialInfo = {
   instagram: {
     title: "My Instagram 📷",
@@ -157,18 +156,22 @@ const socialInfo = {
     username: "Alexander Rogado",
     link: "https://www.facebook.com/share/1EAGxjRDwi/"
   }
-};
 
-function showSocial(platform) {
+  function showSocial(platform) {
   const social = socialInfo[platform];
   const details = document.getElementById("socialDetails");
+
+  if (!social || !details) return;
 
   details.innerHTML = `
     <h3>${social.title}</h3>
     <p>${social.description}</p>
     <p class="social-username">${social.username}</p>
-    <a href="${social.link}" target="_blank"
-       rel="noopener noreferrer" class="contact-button">
+
+    <a href="${social.link}"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="contact-button">
        visit my ${platform} →
     </a>
   `;
