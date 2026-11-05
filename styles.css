@@ -84,3 +84,78 @@ footer button{border:0;background:none;text-decoration:underline;cursor:pointer}
 @keyframes cardIn{from{opacity:0;transform:translateY(30px) rotate(2deg) scale(.96)}to{opacity:1;transform:translateY(0) rotate(-1deg) scale(1)}}
 @media(max-width:800px){.icons{grid-template-columns:repeat(3,1fr)}.welcome{min-height:220px}.sun{right:-30px}.desktop{padding:18px 18px}.postcard-body{padding:12px 20px 25px}.card-grid{grid-template-columns:1fr}}
 @media(max-width:480px){.icons{grid-template-columns:repeat(2,1fr)}h1{letter-spacing:-2px}.desktop-icon:hover{transform:none}footer{flex-wrap:wrap}}
+
+
+
+.social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  padding: 15px 18px;
+
+  border: 1px solid rgba(48,65,55,.12);
+  border-radius: 13px;
+
+  background: var(--mint);
+  color: var(--ink);
+
+  font-family: "Patrick Hand", cursive;
+  font-size: 19px;
+
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.social-btn span:last-child {
+  margin-left: auto;
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+  opacity: .5;
+}
+
+.social-btn:hover {
+  background: var(--yellow);
+  transform: translateX(6px);
+  box-shadow: 0 6px 15px rgba(48,65,55,.08);
+}
+
+.social-btn:active {
+  transform: scale(.98);
+}
+
+
+.social-details {
+  min-height: 150px;
+  margin-top: 20px;
+  padding: 20px;
+
+  background: var(--paper);
+  border: 1px dashed rgba(48,65,55,.3);
+  border-radius: 14px;
+
+  animation: fadeIn .3s ease;
+}
+
+.social-details h3 {
+  font: 26px "Patrick Hand", cursive;
+  color: var(--deep);
+  margin: 0 0 10px;
+}
+
+.social-details p {
+  font-size: 14px;
+}
+
+.social-username {
+  font-family: "DM Mono", monospace;
+  color: var(--green);
+  font-size: 13px;
+}
