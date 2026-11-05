@@ -121,6 +121,7 @@ function updateClock(){
 }
 updateClock(); setInterval(updateClock,30000);
 
+const backdrop = document.getElementById("backdrop");
 const socialInfo = {
   instagram: {
     title: "My Instagram 📷",
